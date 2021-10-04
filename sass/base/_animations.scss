@@ -1,0 +1,24 @@
+
+@keyframes movetoLeft{
+    0%{
+            transform: translateX(-100px);
+    }
+    80%{
+          transform: translateX(20px);
+    }
+    100%{
+            transform: translateX(0px);
+    }
+}
+@keyframes moveToRight{
+    0%{
+        transform: translateX(100px);
+}
+80%{
+      transform: translateX(-20px);
+}
+100%{
+        transform: translateX(0px);
+}
+}
+

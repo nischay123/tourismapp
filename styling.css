@@ -1,0 +1,141 @@
+/* dark #4d038a
+   ,edium #9824f8
+   #c98cfb
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(223, 222, 222);
+    line-height: 1.7;
+    box-sizing: border-box;
+}
+
+.main-header{
+    background-image: linear-gradient(to bottom right, rgba(187, 255, 1, 0.6),  rgba(255, 86, 7,0.5)), url('https://cdn.pixabay.com/photo/2017/04/08/22/26/buddhism-2214532_1280.jpg');
+    /* background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(255,0,0,1)), url('https://cdn.pixabay.com/photo/2017/04/08/22/26/buddhism-2214532__340.jpg'); */
+    background-color: aqua;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    clip-path: polygon(0% 0% , 100% 0% , 95% 80% ,0% 100%);
+}
+
+.logo-container{
+    /* z-index: 2; */
+    position: relative;
+}
+
+.image-logo{
+    height: 4rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.heading-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+.heading-container-title{
+    /* display: ta; */
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: .8em;
+    font-size: 2.4em;
+    text-transform: uppercase;
+
+    animation-name: movetoLeft;
+    animation-duration: .4s;
+    /* word-spacing: 1rem; */
+}
+.heading-container-sub{
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .3em;
+    font-size: 1em;
+    text-transform: uppercase;
+    animation-name: zoomTwiceTimes;
+    animation-duration: .4s;
+    
+}
+@keyframes movetoLeft{
+    0%{
+            transform: translateX(-100px);
+    }
+    80%{
+          transform: translateX(20px);
+    }
+    100%{
+            transform: translateX(0px);
+    }
+}
+@keyframes zoomTwiceTimes{
+    0%{
+        transform: translateX(100px);
+}
+80%{
+      transform: translateX(-20px);
+}
+100%{
+        transform: translateX(0px);
+}
+}
+
+
+.primary-btn-container{
+    position: relative;
+}
+
+.btn{ 
+    padding: 1em;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1em;
+    box-shadow: 0 10px 26px rgba(0, 0, 1, .5);
+    text-transform: uppercase;
+}
+
+.btn-red{
+    background-color: rgb(252 109 38);
+    color: #fff;
+    /* text-transform: uppercase; */
+}
+.btn:hover{
+    transform: translateY(-5px);
+    z-index: 2;
+}
+
+.btn::before{
+    content: "";
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+.btn:hover::before{
+    transform: scale(1.8, 1.2);
+    background-color: rgb(226 67 41);
+    opacity: 0;
+}
+
+
+
+

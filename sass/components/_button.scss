@@ -1,0 +1,65 @@
+
+.primary-btn-container{
+    position: relative;
+}
+
+.btn{ 
+    padding: 1em;
+    border-radius: 3rem;
+    border: none;
+    margin-top: 1em;
+    box-shadow: 0 10px 29px rgba(0, 0, 1, .7);
+    text-transform: uppercase;
+&-red{
+    background-color: $primary-red-color;
+    color: #fff;
+}
+&:hover{
+    transform: translateY(-5px);
+    z-index: 2;
+}
+
+&::before{
+    content: "";
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+&:hover::before{
+    transform: scale(1.8, 1.2);
+    background-color: $dark-red-color;
+    opacity: 0;
+}
+}
+
+
+
+// secondry btn
+
+.secondry-btn-container{
+    margin: 1.8em 0 ;
+    font-size: 1.3rem;
+    cursor: pointer;
+    .btn-secondry{
+         background-color: turquoise;
+         padding: 1rem  1.4rem;
+         box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+         border: none;
+         color: white;
+         transition: all .3s;
+         border-radius: .5rem;
+         text-transform: uppercase;
+         background-image: linear-gradient(to right , $primary-green-yellow-color, $dark-red-color);
+         &:hover{
+             transform: translateY(-0.5rem);
+             background-image: linear-gradient(to right , $primary-red-color, $dark-red-color);
+
+
+            }
+    }
+}

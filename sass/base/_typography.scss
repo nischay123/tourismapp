@@ -1,0 +1,13 @@
+.para{
+
+    &-heading{
+         font-size: 1.6rem;
+         font-weight: 600;
+         margin:  .5em 0 .5em 0; 
+         text-transform: uppercase;
+   }
+    &-content{
+         font-size: 1.4rem;
+         line-height: 1.4rem;
+    }
+}
